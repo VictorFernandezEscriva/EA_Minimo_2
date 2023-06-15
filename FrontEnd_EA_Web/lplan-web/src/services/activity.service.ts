@@ -1,3 +1,4 @@
+import { ActivityShare } from './../models/activity.model';
 import axios from "axios";
 import authHeader from "./authHeader.service";
 import { ActivityEntity } from "../models/activity.model";
@@ -63,6 +64,17 @@ export class ActivityService {
   static async updateActivity(uuid: string, activity: ActivityEntity) {
     try {
       const response = await axios.put(API_URL + "/" + uuid, activity, { headers: authHeader() });
+      console.log("try response " + response)
+      return response;
+    } catch (error) {
+      console.error('Error during loading comments:', error);
+      throw error;
+    }
+  }
+
+  static async getActivity(uuid: string) {
+    try {
+      const response = await axios.get(API_URL + "/" + uuid, { headers: authHeader() });
       console.log("try response " + response)
       return response;
     } catch (error) {

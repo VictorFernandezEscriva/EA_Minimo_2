@@ -77,7 +77,7 @@ const ShareComponent = ({ shareUrl, handleShare }: ShareComponentProps) => {
           <WhatsappShareButton
             url={shareUrl}
             title={title}
-            separator=":: "
+            separator=": "
             className="Demo__some-network__share-button"
           >
             <WhatsappIcon size={32} round />
