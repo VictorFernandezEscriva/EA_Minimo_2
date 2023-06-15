@@ -12,7 +12,7 @@ export class MongoActivityRepository implements ActivityRepository{
     }
 
     async getActivityById(uuid: string): Promise<any> {
-        const responseItem = await ActivityModel.findOne({_id: uuid })
+        const responseItem = await ActivityModel.findOne({_id: uuid }).populate("creatorActivity");
         return responseItem;
     }
 

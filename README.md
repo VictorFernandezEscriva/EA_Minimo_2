@@ -8,12 +8,12 @@
 
 ¿Qué está hecho?
 
-* Texto.
+* Compartir un perfil y una actividad.
 
 ¿Qué falta por hacer?
 
 * No falta nada por hacer, esta todo hecho y funciona.
 
-¿Dudas que podrían surgirte al corregir?
+Link al video, on es el funcionament.
 
-* Texto
+https://www.youtube.com/watch?v=F8cU2jkzxik
